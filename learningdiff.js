@@ -1,7 +1,7 @@
 // Your JavaScript goes here!
 console.log("Hello, World!")
 
-let message;
+
 message = 'Hoi';
 // const is a constant meaning it can't be changed
 const myBirthday = 'Nov17';
@@ -50,4 +50,24 @@ if (hour < 18) {
     greeting = "Good day";
 } else {
     greeting = "Good evening";
+}
+
+let userName = prompt("Who's there?")
+
+if (userName === 'Admin') {
+
+    let pass = prompt('Password?');
+
+    if (pass === 'TheMaster') {
+        alert('Welcome!');
+    } else if (pass === '' || null) {
+        alert('Canceled');
+    } else {
+        alert('Wrong Password');
+    }
+
+} else if (userName === null || userName === '') {
+    alert('Canceled');
+} else {
+    alert("I don't know you");
 }
